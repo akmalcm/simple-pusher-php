@@ -1,0 +1,80 @@
+body {
+    background-color: lavender;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.darker {
+    border-color: #ccc;
+    background-color: #ddd;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container .username {
+    font-weight: bold;
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.container .username-right {
+    font-weight: bold;
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.time-right {
+    float: right;
+    color: #aaa;
+}
+
+.time-left {
+    float: left;
+    color: #999;
+}
+
+#chat {
+    position: relative;
+    height: 400px;
+    border: solid 2px lightskyblue;
+}
+
+#message {
+    width: 92%;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    resize: none;
+}
+
+#submitMessage {
+    position: absolute;
+    height: 56px;
+    bottom: 0px;
+    right: 0px;
+    width: 7%;
+}
+
+#video {
+    margin-top: 10px;
+    height: 400px;
+    border: solid 2px lightskyblue;
+}
